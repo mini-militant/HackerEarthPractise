@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './style.css';
 import ISP from './components/ISP'
 import ISP_data from './components/ISP_data'
+import Header from './components/Header'
 
 function App(){
 {/* all the data is mapped via object named "data" */}
@@ -11,7 +12,7 @@ function App(){
  
     return (
       <div>
-        
+        <Header/>
        {ISP_data_mapping}
       </div>
     );
