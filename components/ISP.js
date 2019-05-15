@@ -10,7 +10,8 @@ const ISP = (props) =>{
         <h3> {props.ISPdata.description}</h3>
         <h3> {props.ISPdata.contact_no}</h3>
         <img src={props.ISPdata.image} alt="error"/>
-        <h3> {props.ISPdata.url}</h3>
+        
+        <a href= {props.ISPdata.url}>Go to Website</a>
     </div>
 
   );
