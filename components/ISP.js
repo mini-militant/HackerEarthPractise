@@ -1,5 +1,5 @@
 import React from "react"
-import StarRating from 'react-star-rating-component'
+import StarRating from 'react-star-ratings'
 
 const ISP = (props) =>{
   return(
@@ -34,8 +34,9 @@ const ISP = (props) =>{
                 {props.ISPdata.email}
                 </p>
                 <StarRating
-                  starCount={5}
-                   value={props.ISPdata.rating} 
+                   rating={props.ISPdata.rating}
+                   starDimension="35px"
+                   starSpacing="0px"
                  />
                 <a href= {props.ISPdata.url}>Go to Website</a></div>
             </div>
