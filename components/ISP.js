@@ -1,5 +1,5 @@
 import React from "react"
-import wifi_image from "./wifi"
+import StarRating from 'react-star-rating-component'
 
 const ISP = (props) =>{
   return(
@@ -14,8 +14,11 @@ const ISP = (props) =>{
           <div className="card">
             <div className="card-body">
                 <p> <i class="material-icons">attach_money</i>&nbsp;&nbsp;
-                Min. Plan : {props.ISPdata.lowest_price}/-</p>
-                <h3> {props.ISPdata.rating}</h3>
+                     Min. Plan : {props.ISPdata.lowest_price} /- 
+                </p>
+
+                
+               
                 
                 <p>
                 <i class="material-icons">network_wifi</i> 
@@ -30,6 +33,10 @@ const ISP = (props) =>{
                 &nbsp;&nbsp;
                 {props.ISPdata.email}
                 </p>
+                <StarRating
+                  starCount={5}
+                   value={props.ISPdata.rating} 
+                 />
                 <a href= {props.ISPdata.url}>Go to Website</a></div>
             </div>
           </div>
