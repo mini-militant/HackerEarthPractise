@@ -17,3 +17,7 @@ h1, p {
 .App-title {
   font-size: 1.5em;
 }
+
+.border-margin{
+  border:1px solid
+}

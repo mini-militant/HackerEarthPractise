@@ -12,8 +12,11 @@ function App(){
  
     return (
       <div>
-        <Header/>
+      <Header/>
+      <div className="container">
+        
        {ISP_data_mapping}
+       </div>
       </div>
     );
  }
