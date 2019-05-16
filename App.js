@@ -13,7 +13,7 @@ function App(){
     return (
       <div>
       <Header/>      
-      <div className="container">
+      <div className="container-fluid">
         {ISP_data_mapping}
        </div>
       </div>

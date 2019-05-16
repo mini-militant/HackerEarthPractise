@@ -1,21 +1,10 @@
 import React from "react"
-import StarRating from 'react-star-ratings'
 
-function showData(){
-
-}
-
-const ISP = (props) =>{
-  return(
-    <div>
-      <div className="row">
+class ShowData extends React.Component{
+  render(){
+    return(
+      <div>
         <div className="col-6">
-          <button onClick="showData()" type="button" class="btn btn-outline-secondary btn-block">
-          {props.ISPdata.name}
-          </button>
-        </div>
-
-        <div className="col">
           <div className="row">
             <div className="col">
                 <img src={props.ISPdata.image} alt="error"/>
@@ -56,11 +45,10 @@ const ISP = (props) =>{
           
           </div>
           </div>
-      </div>  
-    </div>
+      </div>
 
-  );
+    );
+  }
 }
 
-
-export default ISP;
+export default ShowData
