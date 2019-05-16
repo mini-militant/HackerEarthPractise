@@ -34,6 +34,7 @@ const ISP = (props) =>{
                 {props.ISPdata.email}
                 </p>
                 <StarRating
+                   starRatedColor="#8c9906"
                    rating={props.ISPdata.rating}
                    starDimension="35px"
                    starSpacing="0px"
