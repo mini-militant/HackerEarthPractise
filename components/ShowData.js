@@ -4,7 +4,7 @@ class ShowData extends React.Component{
   render(){
     return(
       <div>
-        anything
+        sd
       </div>
 
     );
