@@ -22,3 +22,13 @@ h1, p {
   border:1px solid
 }
 
+#right {
+ 
+  /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  
+  
+ 
+ 
+  
+}

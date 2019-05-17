@@ -1,6 +1,7 @@
 import React from "react"
 import StarRating from 'react-star-ratings'
 
+
 class ISP extends React.Component {
 constructor() {
         super()
@@ -19,23 +20,20 @@ constructor() {
   })
 }
 
-render(){   
-       
+render(){ 
   return(
     <div>
+
       <div className="row">
-        <div className="col-6">
-        
-          
-          <button onClick={this.handleClick} type="button" className="btn btn-outline-secondary btn-block">
+        <div className="col-6" >    
+          <button  onClick={this.handleClick} type="button" className="btn btn-outline-secondary btn-block">
           {this.props.ISPdata.name}
           </button>
-
         </div>
           {this.state.isLoading ?
                 <h1></h1> :
 
-          <div className="col">
+          <div className="col-6" >
             <div className="row">
                 <div className="col">
                       <img src={this.props.ISPdata.image} alt="error"/>
