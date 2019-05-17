@@ -15,8 +15,10 @@ constructor() {
 
  handleClick(){
   const isLoading=this.state.isLoading;
-  this.setState({
-    isLoading:false
+  this.setState(function(prevState){
+    return{
+      isLoading:!prevState.isLoading
+  };
   })
 }
 
@@ -31,7 +33,7 @@ render(){
         </div>
 
           {this.state.isLoading ?
-                <h1></h1>:
+                <h1></h1> :
 
           <div className="col">
             <div className="row">
