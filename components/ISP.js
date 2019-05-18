@@ -1,10 +1,25 @@
 import React from "react"
 import StarRating from 'react-star-ratings'
-import SideNav from "./SideNav"
+
 
 
 class ISP extends React.Component {
+constructor(props){
+    super(props);
+    this.state={
+      isLoading:true
+  }
+  this.handleClick=this.handleClick.bind(this);
+  }
 
+  handleClick(){
+    const isLoading=this.state.isLoading;
+  this.setState(function(prevState){
+    return{
+      isLoading:!prevState.isLoading
+  };
+  })
+  }
 
 render(){ 
   
@@ -13,8 +28,10 @@ render(){
         
       <div className="row">
         <div className="col-6" >    
+          <button  onClick={this.handleClick} type="button" className="btn btn-outline-secondary btn-block">
+          {this.props.ISPdata.name}
+      </button>
           
-          <SideNav Ispname={this.props.ISPdata.name}/>
           
         </div>
           {this.state.isLoading ?
